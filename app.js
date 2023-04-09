@@ -26,6 +26,7 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user.email)
+
       window.location.href = './welcome.html'
     })
     .catch((error) => {
